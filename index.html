@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Naml Design — Graphic Design & Print Studio</title>
+<title>Naml Design — Design + Data Studio | Graphic Design, Excel VBA & Power BI</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
@@ -301,6 +301,17 @@
     margin-bottom: 10px;
   }
   .service-desc { font-size: 0.875rem; color: var(--muted); line-height: 1.65; }
+
+  /* ── DATA SERVICES ── */
+  .data-section { background: var(--white); }
+  .data-section .service-card { background: var(--surface); }
+  .data-section .service-icon { background: #fff; }
+  .chip-row { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 18px; }
+  .chip {
+    font-size: 0.7rem; font-weight: 600; color: var(--navy);
+    background: #fff; border: 1px solid rgba(27,41,128,0.12);
+    padding: 4px 10px; border-radius: 100px;
+  }
 
   /* ── PORTFOLIO ── */
   .portfolio-header {
@@ -748,7 +759,8 @@
     <span class="nav-logo-text">Naml <span>Design</span></span>
   </a>
   <ul class="nav-links">
-    <li><a href="#services">Services</a></li>
+    <li><a href="#services">Design</a></li>
+    <li><a href="#data">Data</a></li>
     <li><a href="#portfolio">Work</a></li>
     <li><a href="#store">Store</a></li>
     <li><a href="#about">About</a></li>
@@ -762,18 +774,18 @@
   <div class="hero-dot-grid"></div>
 
   <div class="hero-content">
-    <div class="hero-eyebrow fade-up">Graphic Design Studio</div>
+    <div class="hero-eyebrow fade-up">Design + Data Studio</div>
     <h1 class="hero-headline fade-up delay-1">
       Design that <br>
-      <span class="underline-gold">speaks</span> louder<br>
-      than <span class="accent">words.</span>
+      <span class="underline-gold">speaks</span> louder.<br>
+      Data that <span class="accent">decides.</span>
     </h1>
     <p class="hero-sub fade-up delay-2">
-      We craft bold visual identities, digital assets, and creative solutions that make your brand impossible to ignore.
+      We pair bold visual identities and print with Advanced Excel automation and Power BI dashboards, so your brand looks sharp and your numbers work harder.
     </p>
     <div class="hero-actions fade-up delay-3">
       <a href="#portfolio" class="btn-primary">View Our Work →</a>
-      <a href="#store" class="btn-outline">Browse Store</a>
+      <a href="#data" class="btn-outline">Data &amp; Dashboards</a>
     </div>
     <div class="hero-stats fade-up delay-4">
       <div>
@@ -804,7 +816,7 @@
       </div>
       <div class="floating-tag tag-2">
         <div class="dot" style="background:var(--cyan)"></div>
-        UI/UX Design
+        Power BI &amp; Excel VBA
       </div>
       <div class="floating-tag tag-3">
         <div class="dot" style="background:var(--navy)"></div>
@@ -818,7 +830,7 @@
 <section class="services" id="services">
   <div class="services-header">
     <div>
-      <div class="section-eyebrow">What We Do</div>
+      <div class="section-eyebrow">Design Services</div>
       <h2 class="section-title">Creative services<br>built for impact</h2>
       <p class="services-desc">From brand identity to digital assets — every pixel is intentional.</p>
     </div>
@@ -859,6 +871,38 @@
   </div>
 </section>
 
+<!-- DATA & ANALYTICS -->
+<section class="data-section" id="data">
+  <div class="services-header">
+    <div>
+      <div class="section-eyebrow">Data &amp; Analytics</div>
+      <h2 class="section-title">Spreadsheets that work,<br>dashboards that tell the story</h2>
+      <p class="services-desc">Advanced Excel, VBA automation and Power BI, built around how your business actually runs.</p>
+    </div>
+    <a href="#contact" class="btn-primary">Discuss Your Data →</a>
+  </div>
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="service-icon">📊</div>
+      <div class="service-title">Advanced Excel Solutions</div>
+      <p class="service-desc">Dynamic models, pivot-driven reports, and clean templates built with advanced formulas, Power Query and Power Pivot.</p>
+      <div class="chip-row"><span class="chip">XLOOKUP</span><span class="chip">Power Query</span><span class="chip">Pivot Tables</span></div>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">⚙️</div>
+      <div class="service-title">VBA Automation</div>
+      <p class="service-desc">Custom macros, user forms and one-click tools that replace hours of repetitive manual work and cut human error.</p>
+      <div class="chip-row"><span class="chip">Macros</span><span class="chip">UserForms</span><span class="chip">Auto Reports</span></div>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">📈</div>
+      <div class="service-title">Power BI Dashboards</div>
+      <p class="service-desc">Interactive, branded dashboards with data modelling and DAX, designed so decision-makers see the answer at a glance.</p>
+      <div class="chip-row"><span class="chip">DAX</span><span class="chip">Data Modelling</span><span class="chip">KPI Reports</span></div>
+    </div>
+  </div>
+</section>
+
 <!-- PORTFOLIO -->
 <section id="portfolio">
   <div class="portfolio-header">
@@ -872,6 +916,7 @@
     <button class="filter-btn" onclick="filterPortfolio(this,'ui')">UI/UX</button>
     <button class="filter-btn" onclick="filterPortfolio(this,'print')">Print</button>
     <button class="filter-btn" onclick="filterPortfolio(this,'social')">Social</button>
+    <button class="filter-btn" onclick="filterPortfolio(this,'data')">Data</button>
   </div>
 
   <div class="portfolio-grid">
@@ -965,6 +1010,42 @@
         <p>Logo Design · Brand System</p>
       </div>
       <div class="portfolio-tag">Branding</div>
+    </div>
+
+    <div class="portfolio-item" data-cat="data">
+      <div class="portfolio-thumb">
+        <div class="portfolio-thumb-bg" style="background:linear-gradient(135deg,#0F1A5C,#1B2980); flex-direction:column; gap:12px; padding:20px;">
+          <div style="display:flex;gap:8px;width:100%">
+            <div style="flex:1;background:rgba(255,255,255,0.1);border-radius:8px;padding:8px"><div style="font-size:0.55rem;color:rgba(255,255,255,0.6)">REVENUE</div><div style="font-size:0.95rem;font-weight:800;color:#F8C316">$2.4M</div></div>
+            <div style="flex:1;background:rgba(255,255,255,0.1);border-radius:8px;padding:8px"><div style="font-size:0.55rem;color:rgba(255,255,255,0.6)">GROWTH</div><div style="font-size:0.95rem;font-weight:800;color:#6DDFF0">+18%</div></div>
+          </div>
+          <div style="display:flex;align-items:flex-end;gap:6px;height:70px;width:100%">
+            <div style="flex:1;height:40%;background:#17C4E0;border-radius:3px"></div><div style="flex:1;height:60%;background:#17C4E0;border-radius:3px"></div><div style="flex:1;height:50%;background:#17C4E0;border-radius:3px"></div><div style="flex:1;height:80%;background:#F8C316;border-radius:3px"></div><div style="flex:1;height:100%;background:#17C4E0;border-radius:3px"></div>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-overlay">
+        <h3>Sales Performance Dashboard</h3>
+        <p>Power BI · DAX · Data Modelling</p>
+      </div>
+      <div class="portfolio-tag">Data</div>
+    </div>
+
+    <div class="portfolio-item" data-cat="data">
+      <div class="portfolio-thumb">
+        <div class="portfolio-thumb-bg" style="background:linear-gradient(135deg,#e8f8fc,#cdf0f7); flex-direction:column; gap:10px; padding:20px;">
+          <div style="width:100%;background:#fff;border-radius:8px;box-shadow:0 4px 16px rgba(27,41,128,0.12);overflow:hidden">
+            <div style="background:#1B2980;color:#fff;font-size:0.6rem;font-weight:700;padding:5px 10px">Monthly_Report.xlsm</div>
+            <div style="padding:8px 10px;font-family:monospace;font-size:0.6rem;color:#1B2980;line-height:1.6">Sub GenerateReports()<br>&nbsp;&nbsp;Refresh · Format · Email<br>End Sub</div>
+          </div>
+          <div style="background:#0F1A5C;color:#F8C316;font-size:0.65rem;font-weight:800;padding:6px 14px;border-radius:100px;letter-spacing:0.08em">▶ 6 HRS → 1 CLICK</div>
+        </div>
+      </div>
+      <div class="portfolio-overlay">
+        <h3>Report Automation Tool</h3>
+        <p>Excel · VBA · Automation</p>
+      </div>
+      <div class="portfolio-tag">Data</div>
     </div>
   </div>
 </section>
@@ -1121,7 +1202,7 @@
   <div class="contact-cta-bg"></div>
   <div class="section-eyebrow" style="justify-content:center;color:rgba(255,255,255,0.6)">Start a Project</div>
   <h2>Ready to create<br>something <span style="color:var(--gold)">unforgettable?</span></h2>
-  <p>Let's build something together. Whether it's a full rebrand or a single asset — we're here to make it exceptional.</p>
+  <p>Let's build something together. Whether it's a full rebrand, an automated Excel workflow or a Power BI dashboard — we're here to make it exceptional.</p>
   <div class="contact-cta-actions">
     <a href="mailto:namldesign93@gmail.com" class="btn-white">✉ namldesign93@gmail.com</a>
     <a href="#" class="btn-ghost">Schedule a Call →</a>
@@ -1136,7 +1217,7 @@
         <img src="Test1.png" alt="Naml Design">
         <span class="footer-logo-name">Naml Design</span>
       </div>
-      <p class="footer-tagline">A graphic design studio crafting bold identities and digital assets that leave a mark.</p>
+      <p class="footer-tagline">A design + data studio crafting bold identities, automated workflows and dashboards that leave a mark.</p>
       <div class="footer-socials">
         <a href="#" class="social-btn">𝕏</a>
         <a href="#" class="social-btn">in</a>
@@ -1152,6 +1233,8 @@
         <li><a href="#">Packaging</a></li>
         <li><a href="#">Motion Graphics</a></li>
         <li><a href="#">Print Design</a></li>
+        <li><a href="#data">Advanced Excel &amp; VBA</a></li>
+        <li><a href="#data">Power BI Dashboards</a></li>
       </ul>
     </div>
     <div class="footer-col">
